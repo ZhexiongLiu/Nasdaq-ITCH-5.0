@@ -5,7 +5,7 @@ Please make sure users have installed Python2 with the packages `gzip`, `struct`
 
 # Run Code
 
-Navigate to the src directory and run the following commands in the terminal.
+Navigate to the `src` directory and run the following commands in the terminal.
 
 `python2 parser.py`
 
