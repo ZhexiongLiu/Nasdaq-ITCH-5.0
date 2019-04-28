@@ -1,5 +1,5 @@
-# Nasdaq-ITCH-5.0-VWAP
-This project parses the NASDAQ ITCH 5.0 data and output the volume-weighted average price (VWAP) for each stock at every trading hour.
+# Nasdaq-ITCH-5.0
+This project parses the NASDAQ ITCH 5.0 data and output the volume-weighted average price for each stock at every trading hour.
 
 Please make sure users have installed Python2 with the packages `gzip`, `struct`, `datetime`, `os`, and `pandas`.
 
