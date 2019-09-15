@@ -63,7 +63,7 @@ class ITCH():
 
 if __name__ == '__main__':
 
-    bin_data = gzip.open(os.path.join('.', 'res', '01302018.NASDAQ_ITCH50.gz'), 'rb')
+    bin_data = gzip.open(os.path.join('.', 'res', '01302019.NASDAQ_ITCH50.gz'), 'rb')
     msg_header = bin_data.read(1)
     itch = ITCH()
 
