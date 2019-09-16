@@ -37,15 +37,14 @@ class ITCH():
         parsed_data, hour = self.trade_message(message)
         if self.flag is None:
             self.flag = hour
-        elif self.flag != hour:
+        if self.flag != hour:
             df = pd.DataFrame(self.temp, columns=['time', 'symbol', 'price', 'volume'])
             result = self.cal_vwap(df)
-            result.to_csv(os.path.join('.', 'output', str(self.flag) + '.txt'), sep=' ', index=False)
+            result.to_csv(os.path.join('..', 'output', str(self.flag) + '.txt'), sep=' ', index=False)
             print(result)
             self.temp = []
-            self.flag = None
-        else:
-            self.temp.append(parsed_data)
+            self.flag = hour
+        self.temp.append(parsed_data)
 
     def trade_message(self, msg):
         msg_type = 'P'
@@ -63,7 +62,7 @@ class ITCH():
 
 if __name__ == '__main__':
 
-    bin_data = gzip.open(os.path.join('.', 'res', '01302019.NASDAQ_ITCH50.gz'), 'rb')
+    bin_data = gzip.open(os.path.join('..', 'res', '08302019.NASDAQ_ITCH50.gz'), 'rb')
     msg_header = bin_data.read(1)
     itch = ITCH()
 
