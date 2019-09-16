@@ -11,6 +11,6 @@ Navigate to the `src` directory and run the following commands in the terminal.
 
 # Dataset
 
-Download raw ITCH 5.0 data from `ftp://emi.nasdaq.com/ITCH/Nasdaq_ITCH/01302019.NASDAQ_ITCH50.gz`. Copy it into `res` folder.
+Download raw ITCH 5.0 data from `ftp://emi.nasdaq.com/ITCH/08302019.NASDAQ_ITCH50.gz`. Copy it into `res` folder.
 
 The data format is defined by the document [Nasdaq TotalView-ITCH 5.0.](http://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHspecification.pdf)
